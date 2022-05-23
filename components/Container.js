@@ -61,9 +61,19 @@ const Container = ({ children }) => {
                             Home
                         </Button>
                     </NextLink>
-                    <NextLink href="/" passhref>
+                    <NextLink href="/blog" passhref>
                         <Button as="a" variant="ghost" p={[1,2,4]} _hover={{backgroundColor: BackNav[colorMode]}} >
                             Blog
+                        </Button>
+                    </NextLink>
+                    <NextLink href="/projects" passhref>
+                        <Button as="a" variant="ghost" p={[1,2,4]} _hover={{backgroundColor: BackNav[colorMode]}} >
+                            Projects
+                        </Button>
+                    </NextLink>
+                    <NextLink href="/contact" passhref>
+                        <Button as="a" variant="ghost" p={[1,2,4]} _hover={{backgroundColor: BackNav[colorMode]}} >
+                            Contact
                         </Button>
                     </NextLink>
                 </Box>
@@ -73,7 +83,7 @@ const Container = ({ children }) => {
                 as="main"
                 justifyContent="center"
                 flexDirection="column"
-                BackColor={BackColor[colorMode]}
+                bg={BackColor[colorMode]}
                 color={color[colorMode]}
                 px={[0, 4, 4]}
                 mt={[4, 8, 8]}
