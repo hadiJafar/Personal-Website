@@ -4,7 +4,7 @@ config.autoAddCss = false;
 import Head from 'next/head'
 import NextLink from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart, faEnvelop, faTruckMedical, faFileCode } from "@fortawesome/free-solid-svg-icons";
+import { faHeart, faFileCode } from "@fortawesome/free-solid-svg-icons";
 import { faJava, faJsSquare, faPython, faGithub, faReact } from "@fortawesome/free-brands-svg-icons";
 import { 
   useColorModeValue,
