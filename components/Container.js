@@ -3,12 +3,15 @@ import {
     useColorMode,
     Button,
     Flex,
-    Box
+    Box,
+    Spacer,
+    Divider
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import styled from '@emotion/styled'
 
 import DarkModeSwitch from '../components/DarkModeSwitch'
+import Footer from "../components/footer";
 
 const Container = ({ children }) => {
     const { colorMode } = useColorMode();
@@ -52,7 +55,7 @@ const Container = ({ children }) => {
                 px={[2, 6, 6]}
                 py={2}
                 mt={8}
-                mb={[0, 0, 8]}
+                mb={[0, 0, 5]}
                 mx="auto"
             >
                 <Box>
@@ -88,8 +91,9 @@ const Container = ({ children }) => {
                 px={[0, 4, 4]}
                 mt={[4, 8, 8]}
             >
-
                 {children}
+                <Footer />
+                <Spacer mt={{ base: 12 }} />
             </Flex>
         </>
     )  

@@ -176,6 +176,9 @@ export default function BlogLayout({ children, frontMatter }) {
 	</a>
     </Text>
 
+    <Spacer mt={{base: 4}} />
+    <Divider/>
+
     </Flex>
     </Stack>
 	</div>

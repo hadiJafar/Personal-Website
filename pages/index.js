@@ -104,43 +104,46 @@ export default function Home() {
             <div className="grid-container">
               <div className="card">
                 <div className="container" align="center">
-                <FontAwesomeIcon icon={faJava} fontSize="120" fixedWidth/>
-                <Heading>Java</Heading>
+                <FontAwesomeIcon icon={faJava} fontSize="100" fixedWidth/>
+                <strong style={{ fontSize: 25 }}>Java</strong>
                 </div>
               </div>
 
               <div className="card">
                 <div className="container" align="center">
-                <FontAwesomeIcon icon={faJsSquare} fontSize="120" fixedWidth/>
-                <Heading>JavaScript</Heading>
+                <FontAwesomeIcon icon={faReact} fontSize="100" fixedWidth/>
+                <strong style={{ fontSize: 25 }}>React</strong>
+                </div>
+              </div>
+
+
+              <div className="card">
+                <div className="container" align="center">
+                <FontAwesomeIcon icon={faPython} fontSize="100" fixedWidth/>
+                <strong style={{ fontSize: 25 }}>Python</strong>
                 </div>
               </div>
 
               <div className="card">
                 <div className="container" align="center">
-                <FontAwesomeIcon icon={faPython} fontSize="120" fixedWidth/>
-                <Heading>Python</Heading>
+                <FontAwesomeIcon icon={faGithub} fontSize="100" fixedWidth/>
+                <strong style={{ fontSize: 25 }}>Git</strong>
+                </div>
+              </div>
+
+              
+
+              <div className="card">
+                <div className="container" align="center">
+                <FontAwesomeIcon icon={faFileCode} fontSize="100" fixedWidth/>
+                <strong style={{ fontSize: 25 }}>VS Code</strong>
                 </div>
               </div>
 
               <div className="card">
                 <div className="container" align="center">
-                <FontAwesomeIcon icon={faGithub} fontSize="120" fixedWidth/>
-                <Heading mt={{base: 2}}>Git</Heading>
-                </div>
-              </div>
-
-              <div className="card">
-                <div className="container" align="center">
-                <FontAwesomeIcon icon={faReact} fontSize="120" fixedWidth/>
-                <Heading>React</Heading>
-                </div>
-              </div>
-
-              <div className="card">
-                <div className="container" align="center">
-                <FontAwesomeIcon icon={faFileCode} fontSize="120" fixedWidth/>
-                <Heading mt={{base: 3}}>VS Code</Heading>
+                <FontAwesomeIcon icon={faJsSquare} fontSize="100" fixedWidth/>
+                <strong style={{ fontSize: 25 }}>JavaScript</strong>
                 </div>
               </div>
 
