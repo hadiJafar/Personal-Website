@@ -51,12 +51,12 @@ export default function BlogLayout({ children, frontMatter }) {
     `;
     return (
         
-        <Container maxW='md'>
+    <Container maxW='md'>
 	<div width="100%">
-            <Head>
-                <title>Projects - Hadi Jafar</title>
-            </Head>
-            <Stack
+        <Head>
+            <title>Projects - Hadi Jafar</title>
+        </Head>
+        <Stack
             as="main"
             spacing={8}
             justifyContent='center'
@@ -65,16 +65,16 @@ export default function BlogLayout({ children, frontMatter }) {
             maxWidth='700px'
             px={2}
         >
-            <Flex
+        <Flex
             flexDirection='column'
             justifyContent='flex-start'
             alignItems='flex-start'
             maxWidth='700px'
-            >
+        >
   
-            <Heading mb={{base: 4}}>My Projects</Heading>
-            <Divider/>
-		    <Heading style={{ fontSize: 23 }} mt={{base: 4}} mb={{base: 4}}>Personal Website</Heading>
+        <Heading mb={{base: 4}}>My Projects</Heading>
+        <Divider/>
+		<Heading style={{ fontSize: 23 }} mt={{base: 4}} mb={{base: 4}}>Personal Website</Heading>
     
 
 	<Tag>
