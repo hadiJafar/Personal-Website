@@ -1,3 +1,6 @@
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
 import React from 'react'
 import { ChakraProvider, ColorModeProvider, useColorMode } from '@chakra-ui/react'
 import customTheme from '../styles/theme'

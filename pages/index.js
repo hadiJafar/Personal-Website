@@ -1,6 +1,3 @@
-import "@fortawesome/fontawesome-svg-core/styles.css";
-import { config } from "@fortawesome/fontawesome-svg-core";
-config.autoAddCss = false;
 import Head from 'next/head'
 import NextLink from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
