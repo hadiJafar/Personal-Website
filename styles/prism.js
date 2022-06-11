@@ -120,7 +120,7 @@ const prismBaseTheme = css`
     box-shadow: inset 3px 0px 0 0px ${theme.colors.blue[600]};
     min-width: fit-content;
   }
-  .remark-code-title {
+  .rehype-code-title {
     padding: ${theme.space[2]} ${theme.space[4]};
     font-family: ${theme.fonts.mono};
     background: ${theme.colors.gray[200]};
@@ -221,7 +221,7 @@ export const prismDarkTheme = css`
   .mdx-marker {
     background-color: ${theme.colors.gray[700]};
   }
-  .remark-code-title {
+  .rehype-code-title {
     background: ${theme.colors.gray[700]};
     color: ${theme.colors.gray[100]};
     border: 1px solid ${theme.colors.gray[700]};
