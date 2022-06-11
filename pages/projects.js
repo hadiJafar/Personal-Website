@@ -1,13 +1,11 @@
 import React from 'react'
 import Head from 'next/head'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faTwitter, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import {
     useColorModeValue,
     Spacer,
     useColorMode,
     Heading,
+    Image,
     Text,
     Flex,
     Link,
@@ -30,21 +28,31 @@ export default function BlogLayout({ children, frontMatter }) {
     const router = useRouter()
     const slug = router.asPath.replace('/projects', '')
     const Tag = styled.div`
-    display: inline-block;
+    
     .tag {
+    	display: inline-block;
         /* Add shadows to create the "card" effect */
       max-width: auto;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-        transition: 0.3s;
         border-radius: 10px;
-        background-color: ${useColorModeValue("#DBD8E3", "#2e2d30")};
+        background-color: ${useColorModeValue("#9973ff", "#6e37ff")};
         padding: 5px 10px 5px 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
       }
     `
+    const ProjectBox = styled.span`
+    img {
+      align="right"  
+      height: 100%;
+      width: 100%;
+      transition: filter 250ms ease, transform 250ms ease;
+    }
+    `;
     return (
         
         <Container maxW='md'>
-
+	<div width="100%">
             <Head>
                 <title>Projects - Hadi Jafar</title>
             </Head>
@@ -66,18 +74,109 @@ export default function BlogLayout({ children, frontMatter }) {
   
             <Heading mb={{base: 4}}>My Projects</Heading>
             <Divider/>
-            <Heading style={{ fontSize: 23 }} mt={{base: 4}}>Personal Website</Heading>
+		    <Heading style={{ fontSize: 23 }} mt={{base: 4}} mb={{base: 4}}>Personal Website</Heading>
     
 
-            <Tag>
-            <div className="tag">tag</div>
-            <div className="tag">hi</div>
-            </Tag>
+	<Tag>
+	    <p>
+            <div className="tag">JavaScript</div>
+            <div className="tag">React</div>
+            <div className="tag">Next.js</div>
+            <div className="tag">Front end</div>
+            <div className="tag">CSS</div>
+            <div className="tag">Chakra-UI</div>
+	    </p>
+    </Tag>
+	<Spacer mt={{base: 2}} />
+    <p>
+    My personal website acts as my portfolio for my projects and gives a little insight about me. Building my personal website allowed me to practically apply my web development skills and helps viewers gain a better understanding about my skillset.
+    </p>
+    <br></br>
+    
+	<Text>
+	Check out more about this project on my {" "}
+    <a href="https://github.com/hadiJafar/personal-website">
+        <Link color={useColorModeValue("#6e37ff", "#9973ff")}>GitHub</Link>
+	</a>
+    </Text>
+
+    <Spacer mt={{base: 4}} />
+    <Divider/>
+    <Heading style={{ fontSize: 23 }} mt={{base: 4}} mb={{base: 4}}>ECommerce Platform</Heading>
+    <Tag>
+	    <p>
+            <div className="tag">Java</div>
+            <div className="tag">CLI</div>
+            <div className="tag">Interactive</div>
+            <div className="tag">ECommerce Platform operations</div>
+	    </p>
+    </Tag>
+    <Spacer mt={{base: 2}} />
+    <p>
+    A CLI program that operates as a simple ECommerce platform might by including functions such as adding items to cart, shipping orders, customer/product info, etc. The aim of this project was to gain a better understanding of how a real ECommerce platform might operate and apply a variety of my Java skills.
+    </p>
+    <br></br>
+
+    <Box align="center" w="100%">
+        <ProjectBox>
+            <Image
+              mb={{ base: 2 }}
+              maxWidth="850px"
+              borderRadius="25px"
+              src={"../images/ECommercePic.png"}
+            />
+          </ProjectBox>
+      </Box>
+
+    <br></br>
+	<Text>
+	Check out more about this project on my {" "}
+    <a href="https://github.com/hadiJafar/CLI-ecommerce-platform">
+        <Link color={useColorModeValue("#6e37ff", "#9973ff")}>GitHub</Link>
+	</a>
+    </Text>
 
 
+    <Spacer mt={{base: 4}} />
+    <Divider/>
+    <Heading style={{ fontSize: 23 }} mt={{base: 4}} mb={{base: 4}}>Tic Tac Toe Game</Heading>
+    <Tag>
+	    <p>
+            <div className="tag">Java</div>
+            <div className="tag">GUI</div>
+            <div className="tag">JPanel</div>
+            <div className="tag">Game</div>
+	    </p>
+    </Tag>
+    <Spacer mt={{base: 2}} />
+    <p>
+    Tic Tac Toe is a simple GUI game that has interactive buttons and includes a welcome screen, rules, an interactive grid, and a winning screen.
+    This Tic tac Toe game is one of the first coding projects I completed. It was very fun experimenting around with the JPanel library and creating this game.
+    </p>
+    <br></br>
 
-            </Flex>
-            </Stack>
-        </Container>
+    <Box align="center" w="100%">
+        <ProjectBox>
+            <Image
+              mb={{ base: 2 }}
+              maxWidth="450px"
+              borderRadius="25px"
+              src={"../images/TicTacToeProjectsPic.gif"}
+            />
+          </ProjectBox>
+      </Box>
+      
+    <br></br>
+	<Text>
+	Check out more about this project on my {" "}
+    <a href="https://github.com/hadiJafar/tic-tac-toe-gui">
+        <Link color={useColorModeValue("#6e37ff", "#9973ff")}>GitHub</Link>
+	</a>
+    </Text>
+
+    </Flex>
+    </Stack>
+	</div>
+    </Container>
     )
 }

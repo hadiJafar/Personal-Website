@@ -104,45 +104,45 @@ export default function Home() {
           </Text>
 
           <CardStyle>
-            <div class="grid-container">
-              <div class="card">
-                <div class="container" align="center">
-                <FontAwesomeIcon icon={faJava} fontSize="120" fixedWidth="true"/>
+            <div className="grid-container">
+              <div className="card">
+                <div className="container" align="center">
+                <FontAwesomeIcon icon={faJava} fontSize="120" fixedWidth/>
                 <Heading>Java</Heading>
                 </div>
               </div>
 
-              <div class="card">
-                <div class="container" align="center">
-                <FontAwesomeIcon icon={faJsSquare} fontSize="120" fixedWidth="true"/>
+              <div className="card">
+                <div className="container" align="center">
+                <FontAwesomeIcon icon={faJsSquare} fontSize="120" fixedWidth/>
                 <Heading>JavaScript</Heading>
                 </div>
               </div>
 
-              <div class="card">
-                <div class="container" align="center">
-                <FontAwesomeIcon icon={faPython} fontSize="120" fixedWidth="true"/>
+              <div className="card">
+                <div className="container" align="center">
+                <FontAwesomeIcon icon={faPython} fontSize="120" fixedWidth/>
                 <Heading>Python</Heading>
                 </div>
               </div>
 
-              <div class="card">
-                <div class="container" align="center">
-                <FontAwesomeIcon icon={faGithub} fontSize="120" fixedWidth="true"/>
+              <div className="card">
+                <div className="container" align="center">
+                <FontAwesomeIcon icon={faGithub} fontSize="120" fixedWidth/>
                 <Heading mt={{base: 2}}>Git</Heading>
                 </div>
               </div>
 
-              <div class="card">
-                <div class="container" align="center">
-                <FontAwesomeIcon icon={faReact} fontSize="120" fixedWidth="true"/>
+              <div className="card">
+                <div className="container" align="center">
+                <FontAwesomeIcon icon={faReact} fontSize="120" fixedWidth/>
                 <Heading>React</Heading>
                 </div>
               </div>
 
-              <div class="card">
-                <div class="container" align="center">
-                <FontAwesomeIcon icon={faFileCode} fontSize="120" fixedWidth="true"/>
+              <div className="card">
+                <div className="container" align="center">
+                <FontAwesomeIcon icon={faFileCode} fontSize="120" fixedWidth/>
                 <Heading mt={{base: 3}}>VS Code</Heading>
                 </div>
               </div>

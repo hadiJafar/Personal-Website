@@ -78,7 +78,7 @@ export default function BlogLayout({ children, frontMatter }) {
             >
             <Heading mb={{base: 4}}>Reach Me Here!!</Heading>
 
-            <Text style={{ fontSize: 23 }} color={textColor[colorMode]} mt={{base: 2}}>You can find me at:</Text>
+            <Text style={{ fontSize: 23 }} mt={{base: 2}}>You can find me at:</Text>
 
             <Spacer mt={{ base: 1 }} />
 
@@ -126,7 +126,7 @@ export default function BlogLayout({ children, frontMatter }) {
                 <FontAwesomeIcon icon={faEnvelope} fixedWidth />
                 &ensp; {" "}
               </p> {" "}
-              <Text color={textColor[colorMode]}>hadi.jafar23@gmail.com
+              <Text>hadi.jafar23@gmail.com
                 </Text>
             </Box>
 
