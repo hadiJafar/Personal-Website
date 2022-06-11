@@ -124,6 +124,7 @@ export default function BlogLayout({ children, frontMatter }) {
               maxWidth="850px"
               borderRadius="25px"
               src={"../images/ECommercePic.png"}
+              alt="ECommerce"
             />
           </ProjectBox>
       </Box>
@@ -162,6 +163,7 @@ export default function BlogLayout({ children, frontMatter }) {
               maxWidth="450px"
               borderRadius="25px"
               src={"../images/TicTacToeProjectsPic.gif"}
+              alt="Tic Tac Toe"
             />
           </ProjectBox>
       </Box>

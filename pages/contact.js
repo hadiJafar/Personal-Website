@@ -27,7 +27,7 @@ export default function BlogLayout({ children, frontMatter }) {
         
     }
     const router = useRouter()
-    const slug = router.asPath.replace('/blog', '')
+    const slug = router.asPath.replace('/contact', '')
     const CardStyle = styled.div`
 .card {
 	/* Add shadows to create the "card" effect */
@@ -133,10 +133,10 @@ export default function BlogLayout({ children, frontMatter }) {
             <Spacer mt={{ base: 3 }} />
 
             <CardStyle>
-            <div class="grid-container">
+            <div className="grid-container">
             <a href="https://www.linkedin.com/in/hadi-jafar-950916205/">
-              <div class="card">
-                <div class="container" align="center">
+              <div className="card">
+                <div className="container" align="center">
                 <FontAwesomeIcon icon={faLinkedin} fontSize="120" fixedWidth="true"/>
                 <Heading>LinkedIn</Heading>
                 </div>
@@ -144,8 +144,8 @@ export default function BlogLayout({ children, frontMatter }) {
               </a>
 
               <a href="https://twitter.com/Hadi_Jafar10">
-              <div class="card">
-                <div class="container" align="center">
+              <div className="card">
+                <div className="container" align="center">
                 <FontAwesomeIcon icon={faTwitter} fontSize="120" fixedWidth="true"/>
                 <Heading>Twitter</Heading>
                 </div>
@@ -153,8 +153,8 @@ export default function BlogLayout({ children, frontMatter }) {
               </a>
 
               <a href="https://github.com/hadiJafar">
-              <div class="card">
-                <div class="container" align="center">
+              <div className="card">
+                <div className="container" align="center">
                 <FontAwesomeIcon icon={faGithub} fontSize="120" fixedWidth="true"/>
                 <Heading>GitHub</Heading>
                 </div>
