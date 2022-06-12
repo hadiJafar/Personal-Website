@@ -114,7 +114,7 @@ export default function BlogLayout({ children, frontMatter }) {
                 &ensp;{" "}
               </p>{" "}
               <Link href="https://github.com/hadiJafar">
-                  <Text color={useColorModeValue("#6e37ff", "#9973ff")}>@hadiJafar
+                  <Text color={useColorModeValue("#6e37ff", "#9973ff")}>@hadijafar
                   </Text>
               </Link>
             </Box>
@@ -152,7 +152,7 @@ export default function BlogLayout({ children, frontMatter }) {
               </div>
               </a>
 
-              <a href="https://github.com/hadiJafar">
+              <a href="https://github.com/hadijafar">
               <div className="card">
                 <div className="container" align="center">
                 <FontAwesomeIcon icon={faGithub} fontSize="120" fixedWidth="true"/>
