@@ -75,7 +75,7 @@ export default function Home() {
           <Text style={{ fontSize: 20 }} mb={{base: 5}} >Developer • Student • Plant Parent • Animal Lover</Text>
 
           <Heading style={{ fontSize: 23 }}>About me</Heading>
-          <Text color={colorSecondary[colorMode]} mt={{base: 2}}>Hi!! I am currently a second year studying computer science at <strong>Toronto Metropolitan University </strong> (formerly known as <strong>Ryerson</strong>).I find learning fun, exiting, and interesting!! I enjoy taking intiative and challenging myself by building projects for fun. Check out some of my work in {" "}
+          <Text mt={{base: 2}}>Hi!! I am currently a second year studying computer science at <strong>Toronto Metropolitan University </strong> (formerly known as <strong>Ryerson</strong>).I find learning fun, exiting, and interesting!! I enjoy taking intiative and challenging myself by building projects for fun. Check out some of my work in {" "}
           <NextLink href="/projects" scroll={false}>
             <Link color={useColorModeValue("#6e37ff", "#9973ff")}>projects</Link>
           </NextLink>{" "}
@@ -83,7 +83,7 @@ export default function Home() {
           </Text>
 
           <Heading style={{ fontSize: 23 }}>A Little More About Me Personally </Heading>
-          <Text color={colorSecondary[colorMode]} mt={{base: 2}}>Apart from coding, I really like taking care of plants, drawing, spending time outdoors, wall art decor, exploring museums, and cycling. I frequently visit the A.G.O, go bicycling around twice a week, and have been working on improving my hatching art style. Take a look at my {" "}
+          <Text mt={{base: 2}}>Apart from coding, I really like taking care of plants, drawing, spending time outdoors, wall art decor, exploring museums, and cycling. I frequently visit the A.G.O, go bicycling around twice a week, and have been working on improving my hatching art style. Take a look at my {" "}
           <NextLink href="/blog" scroll={false}>
             <Link color={useColorModeValue("#6e37ff", "#9973ff")}>blogs</Link>
           </NextLink>{" "}
@@ -91,9 +91,9 @@ export default function Home() {
            </Text>
 
           <Heading style={{ fontSize: 23 }}>My Love Languages <FontAwesomeIcon icon={faHeart}/> </Heading>
-          <Text color={colorSecondary[colorMode]} mt={{base: 2}}>
+          <Text mt={{base: 2}}>
           </Text>
-          <Text color={colorSecondary[colorMode]} mb={{base: 3}}>Some of my favourite coding languages are <strong>Java, Javascript, Python</strong>, and <strong>React</strong>. Apart from coding languages, I use VS code as my IDE and love using git to help me complete projects and use open source code. Take a look at some of my coding related {" "}
+          <Text mb={{base: 3}}>Some of my favourite coding languages are <strong>Java, Javascript, Python</strong>, and <strong>React</strong>. Apart from coding languages, I use VS code as my IDE and love using git to help me complete projects and use open source code. Take a look at some of my coding related {" "}
           <NextLink href="/blog" scroll={false}>
             <Link color={useColorModeValue("#6e37ff", "#9973ff")}>blogs</Link>
           </NextLink>{" "}
