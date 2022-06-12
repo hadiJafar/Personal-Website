@@ -1,0 +1,103 @@
+---
+title: 'My Website Journey'
+publishedAt: '2022-06-12'
+summary: 'This blog covers my process on creating this website'
+---
+
+I intially decided to build a personal website because I wanted to create a place where I could showcase my projects with a creative touch and so I could learn more about web development and apply my skills in a practical way. 
+
+## Outline
+
+- [Prior Research](prior-research)
+
+- [Building The Site](#building-the-site)
+
+- [Challenges I Faced](#challenges-i-faced)
+
+- [Emotional Journey During The Process](#emotional-journey-during-the-process)
+
+- [Future Steps For The Site](#future-steps-for-the-site)
+
+## Prior Research
+
+I began by looking for what languages I would want my website to be built in. I looked over DJango and JavaScript and decided on using JavaScript since I was building a cilent-side web application that didn't need an extensive backend. As a result, using JavaScript would allow me to build a frontend and backend parts of the application with ease.
+
+## Building The Site
+
+I broke done building the site into components so it would be easier to handle and I would be able to set slowly build my site up.
+
+1. Creating the index page of my site
+
+2. Creating the package.json file for the packages I need and updating it as I go
+
+3. Creating the theme/ adding the navbar
+
+4. Creating other pages (blogs, projects, contact)
+
+5. Adding in the footer and images
+
+By following these steps, I was able to tackle the site in small chunks rather than being overwhelmed at how big the whole site will end up becoming. This also helped me moniter my progress as I worked on the site and I was able to slowly see my site gain life.
+
+## Challenges I Faced
+
+While working on my website, I encountered several cumbersome challenges and they led me to spending extra time to achieve. One of the most noticeable challenges I encountered was making the styled parts of the icons on the home page.
+
+To overcome this hurdle, I began to extensively play around with the styled components and researched different ways to implement the shadows as well create the grid so the blocks would be more spread out to look better.
+
+In the end, I was able to create the grid on the home screen by using the styled code below:
+
+```JavaScript:pages/index.js
+const CardStyle = styled.div`
+    .card {
+        /* Add shadows to create the "card" effect */
+    margin-right: 25px;
+    margin-bottom: 25px;
+    max-width: auto;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        border-radius: 10px;
+        background-color: ${useColorModeValue("#DBD8E3", "#2e2d30")};
+    padding: 20px;
+    }
+    
+    /* On mouse-over, add a deeper shadow */
+    .card:hover {
+        box-shadow: 0 8px 16px 0 ${useColorModeValue("#a989fd", "#9973ff")};
+        border-radius: 10px;
+    }
+    
+    /* Add some padding inside the card container */
+    .container {
+        padding: 2px 16px;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+`
+```
+
+I implemented the following styled components into my page by using the code below and modifying the names to different icons each time. The ```CardStyle``` and the ```grid-container``` would wrap all of the icon blocks used in the code.
+
+```js:pages/index.js
+<CardStyle>
+    <div className="grid-container">
+        <div className="card">
+            <div className="container" align="center">
+                <FontAwesomeIcon icon={faJava} fontSize="100" fixedWidth/>
+                <strong style={{ fontSize: 25 }}>Java</strong>
+            </div>
+        </div>
+    </div>
+</CardStyle>
+```
+
+## Emotional Journey During The Process
+
+The entire project was very enjoyable and I had fun building it even when I was being challenged. However, the project did have a few ups and downs which made me feel frustrated at times, but I was able to continue working diligently because of the progress I had previously made and I knew I would be able to overcome the challenge in time. 
+
+The most frustrating part of this project was making sure the styled components worked with the rest of the code and didn't cause any errors or obscure formatting issues. The most enjoyable part of doing this project was seeing my work take life immediately as it allowed me to more picky with the fine details with the site.
+
+## Future Steps For The Site
+
+For the future, I plan on implementing pagination for my blogs and projects pages in the near future when they reach around 5 posts. Additionally, I plen on keeping my projects up to date with my current work as well as use publish more blogs.
