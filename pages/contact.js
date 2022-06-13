@@ -13,6 +13,7 @@ import {
     Link,
     Stack,
     Box,
+    SimpleGrid,
 } from '@chakra-ui/react'
 import { useRouter } from 'next/router'
 
@@ -29,35 +30,33 @@ export default function BlogLayout({ children, frontMatter }) {
     const router = useRouter()
     const slug = router.asPath.replace('/contact', '')
     const CardStyle = styled.div`
-.card {
-	/* Add shadows to create the "card" effect */
-  margin-right: 25px;
-  margin-bottom: 25px;
-  max-width: auto;
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-	transition: 0.3s;
-	border-radius: 10px;
-	background-color: ${useColorModeValue("#DBD8E3", "#2e2d30")};
-  padding: 20px;
-  }
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+  .card {
+    /* Add shadows to create the "card" effect */
   
-  /* On mouse-over, add a deeper shadow */
-  .card:hover {
-	box-shadow: 0 8px 16px 0 ${useColorModeValue("#a989fd", "#9973ff")};
-	border-radius: 10px;
-  }
+    margin-right: 1.5em;
+    margin-bottom: 1.5em;
+    height: auto;
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+    background-color: ${useColorModeValue("#DBD8E3", "#2e2d30")};
+    padding: 1.25em;
+    }
+    
+    /* On mouse-over, add a deeper shadow */
+    .card:hover {
+    box-shadow: 0 8px 16px 0 ${useColorModeValue("#a989fd", "#9973ff")};
+    border-radius: 10px;
+    }
+    
   
-  /* Add some padding inside the card container */
-  .container {
-	padding: 2px 16px;
-  }
-  .grid-container{
-    display: grid;
-    grid-template-columns: auto auto auto;
-  }
-  `
+    `
     return (
-        <Container>
+        <Container width='100%'>
             <Head>
                 <title>Contact - Hadi Jafar</title>
             </Head>
@@ -68,6 +67,7 @@ export default function BlogLayout({ children, frontMatter }) {
             alignItems='flex-start'
             m='0 auto 4rem auto'
             maxWidth='700px'
+            width='100%'
             px={2}
         >
             <Flex
@@ -75,10 +75,11 @@ export default function BlogLayout({ children, frontMatter }) {
             justifyContent='flex-start'
             alignItems='flex-start'
             maxWidth='700px'
+            width='100%'
             >
             <Heading mb={{base: 4}}>Reach Me Here!!</Heading>
 
-            <Text style={{ fontSize: 23 }} mt={{base: 2}}>You can find me at:</Text>
+            <Text style={{ fontSize: 23 }} mt={{base: 2}}>You can find me at: </Text>
 
             <Spacer mt={{ base: 1 }} />
 
@@ -130,15 +131,17 @@ export default function BlogLayout({ children, frontMatter }) {
                 </Text>
             </Box>
 
-            <Spacer mt={{ base: 3 }} />
-
-            <CardStyle>
-            <div className="grid-container">
+            <Spacer mt={{ base: 4 }}/>
+            <CardStyle align="center">
+            <SimpleGrid columns={[1, 1, 3]} gap={1}>
+            
+            
             <a href="https://www.linkedin.com/in/hadi-jafar-950916205/">
               <div className="card">
                 <div className="container" align="center">
-                <FontAwesomeIcon icon={faLinkedin} fontSize="120" fixedWidth="true"/>
-                <Heading>LinkedIn</Heading>
+                <FontAwesomeIcon icon={faLinkedin} fontSize="6em" fixedWidth="true"/>
+                <br/>
+                <strong style={{ fontSize: 25 }}>LinkedIn</strong>
                 </div>
               </div>
               </a>
@@ -146,8 +149,9 @@ export default function BlogLayout({ children, frontMatter }) {
               <a href="https://twitter.com/Hadi_Jafar10">
               <div className="card">
                 <div className="container" align="center">
-                <FontAwesomeIcon icon={faTwitter} fontSize="120" fixedWidth="true"/>
-                <Heading>Twitter</Heading>
+                <FontAwesomeIcon icon={faTwitter} fontSize="6em" fixedWidth="true"/>
+                <br/>
+                <strong style={{ fontSize: 25 }}>Twitter</strong>
                 </div>
               </div>
               </a>
@@ -155,14 +159,15 @@ export default function BlogLayout({ children, frontMatter }) {
               <a href="https://github.com/hadijafar">
               <div className="card">
                 <div className="container" align="center">
-                <FontAwesomeIcon icon={faGithub} fontSize="120" fixedWidth="true"/>
-                <Heading>GitHub</Heading>
+                <FontAwesomeIcon icon={faGithub} fontSize="6em" fixedWidth="true"/>
+                <br/>
+                <strong style={{ fontSize: 25 }}>Github</strong>
                 </div>
               </div>
               </a>
-
-            </div>
-            </CardStyle>
+              
+              </SimpleGrid>
+              </CardStyle>
             </Flex>
             </Stack>
         </Container>

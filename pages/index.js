@@ -11,7 +11,7 @@ import {
   Flex,
   Link,
   Stack,
-  Button,
+  SimpleGrid,
 } from '@chakra-ui/react'
 import Container from '../components/Container'
 import { redirect } from 'next/dist/server/api-utils';
@@ -24,16 +24,21 @@ export default function Home() {
     dark: 'gray.400'
   }
   const CardStyle = styled.div`
+  text-align: center;
+  justify-content: center;
+  width: 100%;
 .card {
 	/* Add shadows to create the "card" effect */
-  margin-right: 25px;
-  margin-bottom: 25px;
-  max-width: auto;
+
+  margin-right: 1.5em;
+  margin-bottom: 1.5em;
+  height: auto;
+  display: block;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	transition: 0.3s;
 	border-radius: 10px;
 	background-color: ${useColorModeValue("#DBD8E3", "#2e2d30")};
-  padding: 20px;
+  padding: 1.25em;
   }
   
   /* On mouse-over, add a deeper shadow */
@@ -42,17 +47,10 @@ export default function Home() {
 	border-radius: 10px;
   }
   
-  /* Add some padding inside the card container */
-  .container {
-	padding: 2px 16px;
-  }
-  .grid-container{
-    display: grid;
-    grid-template-columns: auto auto auto;
-  }
+
   `
   return (
-    <Container>
+    <Container >
       <Head>
         <title>Home - Hadi Jafar</title>
       </Head>
@@ -70,6 +68,7 @@ export default function Home() {
           justifyContent='flex-start'
           alignItems='flex-start'
           maxWidth='700px'
+          
         >
           <Heading mb={{base: 0}}>Hi, I{"'"}m Hadi Jafar</Heading>
           <Text style={{ fontSize: 20 }} mb={{base: 5}} >Developer • Student • Plant Parent • Animal Lover</Text>
@@ -101,17 +100,19 @@ export default function Home() {
           </Text>
 
           <CardStyle>
-            <div className="grid-container">
+            <SimpleGrid columns={[2, 3, 3]} gap={1}>
               <div className="card">
                 <div className="container" align="center">
-                <FontAwesomeIcon icon={faJava} fontSize="100" fixedWidth/>
+                <FontAwesomeIcon icon={faJava} fontSize="6em" fixedWidth/>
+                <br/>
                 <strong style={{ fontSize: 25 }}>Java</strong>
                 </div>
               </div>
 
               <div className="card">
                 <div className="container" align="center">
-                <FontAwesomeIcon icon={faReact} fontSize="100" fixedWidth/>
+                <FontAwesomeIcon icon={faReact} fontSize="6em" fixedWidth/>
+                <br/>
                 <strong style={{ fontSize: 25 }}>React</strong>
                 </div>
               </div>
@@ -119,14 +120,16 @@ export default function Home() {
 
               <div className="card">
                 <div className="container" align="center">
-                <FontAwesomeIcon icon={faPython} fontSize="100" fixedWidth/>
+                <FontAwesomeIcon icon={faPython} fontSize="6em" fixedWidth/>
+                <br/>
                 <strong style={{ fontSize: 25 }}>Python</strong>
                 </div>
               </div>
 
               <div className="card">
                 <div className="container" align="center">
-                <FontAwesomeIcon icon={faGithub} fontSize="100" fixedWidth/>
+                <FontAwesomeIcon icon={faGithub} fontSize="6em" fixedWidth/>
+                <br/>
                 <strong style={{ fontSize: 25 }}>Git</strong>
                 </div>
               </div>
@@ -135,21 +138,23 @@ export default function Home() {
 
               <div className="card">
                 <div className="container" align="center">
-                <FontAwesomeIcon icon={faFileCode} fontSize="100" fixedWidth/>
+                <FontAwesomeIcon icon={faFileCode} fontSize="6em" fixedWidth/>
+                <br/>
                 <strong style={{ fontSize: 25 }}>VS Code</strong>
                 </div>
               </div>
 
               <div className="card">
                 <div className="container" align="center">
-                <FontAwesomeIcon icon={faJsSquare} fontSize="100" fixedWidth/>
+                <FontAwesomeIcon icon={faJsSquare} fontSize="6em" fixedWidth/>
+                <br/>
                 <strong style={{ fontSize: 25 }}>JavaScript</strong>
                 </div>
               </div>
 
-            </div>
+              </SimpleGrid>
           </CardStyle>
-         
+        
         </Flex>
       </Stack>
     </Container>
