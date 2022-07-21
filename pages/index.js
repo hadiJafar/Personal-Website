@@ -74,7 +74,7 @@ export default function Home() {
           <Text style={{ fontSize: 20 }} mb={{base: 5}} >Developer • Student • Plant Parent • Animal Lover</Text>
 
           <Heading style={{ fontSize: 23 }}>About me</Heading>
-          <Text mt={{base: 2}}>Hi!! I am currently a second year studying computer science at <strong>Toronto Metropolitan University </strong> (formerly known as <strong>Ryerson</strong>).I find learning fun, exiting, and interesting!! I enjoy taking intiative and challenging myself by building projects for fun. Check out some of my work in {" "}
+          <Text mt={{base: 2}}>Hi!! I am currently a second year studying computer science at <strong>Toronto Metropolitan University </strong> (formerly known as <strong>Ryerson</strong>).I find learning fun, exciting, and interesting!! I enjoy taking intiative and challenging myself by building projects for fun. Check out some of my work in {" "}
           <NextLink href="/projects" scroll={false}>
             <Link color={useColorModeValue("#6e37ff", "#9973ff")}>projects</Link>
           </NextLink>{" "}
