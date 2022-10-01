@@ -19,8 +19,7 @@ const NotFound = () => {
         w="100%"
         px={2}
       >
-        <Heading as="h1"> Not Found</Heading>
-        <p>The page you&#39;re looking for can&#39;t be found.</p>
+        <Heading as="h1"> The page you&#39;re looking for can&#39;t <br></br>be found.</Heading>
         <Divider mb={{ base: 2 }} mt={{ base: 1 }} />
         <p>
             Would you like to return to the{" "}
