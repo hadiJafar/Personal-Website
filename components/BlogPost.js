@@ -2,6 +2,7 @@ import React from 'react'
 import NextLink from 'next/link'
 import { useColorMode, Heading, Text, Flex, Box, Link } from '@chakra-ui/react'
 import { parseISO, format } from 'date-fns'
+import { motion } from "framer-motion";
 
 //first 3 are from test-post.mdx, they are components used for the meta data
 const BlogPost = ({ title, publishedAt, summary, slug }) => { 

@@ -14,6 +14,7 @@ import {
     Divider,
 } from '@chakra-ui/react'
 import { useRouter } from 'next/router'
+import { motion } from "framer-motion";
 
 import Container from '../components/Container'
 import styled from '@emotion/styled'
@@ -50,7 +51,11 @@ export default function BlogLayout({ children, frontMatter }) {
     }
     `;
     return (
-        
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
     <Container maxW='md'>
 	<div width="100%">
         <Head>
@@ -183,5 +188,6 @@ export default function BlogLayout({ children, frontMatter }) {
     </Stack>
 	</div>
     </Container>
+    </motion.div>
     )
 }

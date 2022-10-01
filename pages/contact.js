@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faTwitter, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { motion } from "framer-motion";
 import {
     useColorModeValue,
     Spacer,
@@ -56,6 +57,11 @@ export default function BlogLayout({ children, frontMatter }) {
   
     `
     return (
+      <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
         <Container width='100%'>
             <Head>
                 <title>Contact - Hadi Jafar</title>
@@ -171,5 +177,6 @@ export default function BlogLayout({ children, frontMatter }) {
             </Flex>
             </Stack>
         </Container>
+        </motion.div>
     )
 }
