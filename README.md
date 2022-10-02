@@ -1,7 +1,6 @@
 This project is made using Next.js, React, and Chakra-UI.
 
-Check out my sites live link below:
-https://hadijafar.netlify.app
+Check out my site here: https://hadijafar.netlify.app
 
 ## Getting Started
 
