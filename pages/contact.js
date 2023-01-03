@@ -152,7 +152,7 @@ export default function BlogLayout({ children, frontMatter }) {
               </div>
               </a>
 
-              <a href="https://twitter.com/Hadi_Jafar10">
+              <a href="https://twitter.com/hadijafar0">
               <div className="card">
                 <div className="container" align="center">
                 <FontAwesomeIcon icon={faTwitter} fontSize="6em" fixedWidth="true"/>
